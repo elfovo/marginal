@@ -6,13 +6,17 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "clean": "rm -rf node_modules/.vite && killall node 2>/dev/null || true"
+    "clean": "rm -rf node_modules/.vite && killall node 2>/dev/null || true",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
+  "homepage": "https://elfovo.github.io/marginal",
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^6.3.6"
   },
   "dependencies": {
