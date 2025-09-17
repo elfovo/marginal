@@ -3,6 +3,15 @@ import { Camera, Mesh, Plane, Program, Renderer, Texture, Transform } from 'ogl'
 
 import './CircularGallery.css';
 
+// Import des images pour la galerie
+import chemiseImage from '../../assets/images/CHEMISE_herarchy.png';
+import basicTeeArriereImage from '../../assets/images/basic_tee_arriere.png';
+import enb1Image from '../../assets/images/ENB1.png';
+import ent1Image from '../../assets/images/ENT1.png';
+import glImage from '../../assets/images/GL.png';
+import herTeeImage from '../../assets/images/Her_Tee.png';
+import jerseyNoir2Image from '../../assets/images/Jersey_noir_2.png';
+
 function debounce(func, wait) {
   let timeout;
   return function (...args) {
@@ -315,18 +324,18 @@ class App {
   }
   createMedias(items, bend = 1, textColor, borderRadius, font) {
     const defaultItems = [
-      { image: '/src/assets/images/CHEMISE_herarchy.png', text: 'Chemise' },
-      { image: '/src/assets/images/basic_tee_arriere.png', text: 'Tee' },
-      { image: '/src/assets/images/ENB1.png', text: 'ENB1' },
-      { image: '/src/assets/images/ENT1.png', text: 'ENT1' },
-      { image: '/src/assets/images/GL.png', text: 'GL' },
-      { image: '/src/assets/images/Her_Tee.png', text: 'Her Tee' },
-      { image: '/src/assets/images/Jersey_noir_2.png', text: 'Jersey' },
-      { image: '/src/assets/images/CHEMISE_herarchy.png', text: 'Chemise' },
-      { image: '/src/assets/images/basic_tee_arriere.png', text: 'Tee' },
-      { image: '/src/assets/images/ENB1.png', text: 'ENB1' },
-      { image: '/src/assets/images/ENT1.png', text: 'ENT1' },
-      { image: '/src/assets/images/GL.png', text: 'GL' }
+      { image: chemiseImage, text: 'Chemise' },
+      { image: basicTeeArriereImage, text: 'Tee' },
+      { image: enb1Image, text: 'ENB1' },
+      { image: ent1Image, text: 'ENT1' },
+      { image: glImage, text: 'GL' },
+      { image: herTeeImage, text: 'Her Tee' },
+      { image: jerseyNoir2Image, text: 'Jersey' },
+      { image: chemiseImage, text: 'Chemise' },
+      { image: basicTeeArriereImage, text: 'Tee' },
+      { image: enb1Image, text: 'ENB1' },
+      { image: ent1Image, text: 'ENT1' },
+      { image: glImage, text: 'GL' }
     ];
     const galleryItems = items && items.length ? items : defaultItems;
     this.mediasImages = galleryItems.concat(galleryItems);

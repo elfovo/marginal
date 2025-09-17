@@ -9,6 +9,10 @@ import ScrollReveal from './components/ScrollReveal/ScrollReveal';
 import Plasma from './components/Plasma';
 import './styles/globals.css';
 
+// Import des images
+import messagesImage from './assets/images/messages.png';
+import instaImage from './assets/images/insta.png';
+
 const waveVertexShader = `
 precision highp float;
 varying vec2 vUv;
@@ -436,7 +440,7 @@ function App() {
             margin: 'clamp(10px, 2vw, 20px) auto'
           }}>
             <img 
-              src="/src/assets/images/messages.png" 
+              src={messagesImage} 
               alt="Messages"
               style={{
                 width: '100%',
@@ -539,8 +543,8 @@ function App() {
           height: '100%',
           zIndex: 1,
           background: `
-            linear-gradient(to bottom, rgba(17, 17, 17, 0.8) 0%, transparent 15%, transparent 85%, rgba(17, 17, 17, 0.8) 100%),
-            linear-gradient(to right, rgba(17, 17, 17, 0.6) 0%, transparent 10%, transparent 90%, rgba(17, 17, 17, 0.6) 100%)
+            linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, transparent 15%, transparent 85%, rgba(0, 0, 0, 0.8) 100%),
+            linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, transparent 10%, transparent 90%, rgba(0, 0, 0, 0.6) 100%)
           `,
           pointerEvents: 'none'
         }} />
@@ -638,7 +642,7 @@ function App() {
             }}
           >
             <img
-              src="/src/assets/images/insta.png"
+              src={instaImage}
               alt="Instagram"
               style={{
                 width: '100%',
