@@ -1,0 +1,11 @@
+{
+  "site_analyzed": "https://marginalmouvement.com",
+  "total_images_found": 46,
+  "images_downloaded": 46,
+  "folders_created": [
+    "assets/images",
+    "assets/logos",
+    "assets/icons",
+    "assets/fonts"
+  ]
+}
